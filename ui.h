@@ -17,6 +17,7 @@ extern "C" {
 
 // SCREEN: ui_Screen1
 void ui_Screen1_screen_init(void);
+void ui_event_Screen1( lv_event_t * e);
 extern lv_obj_t *ui_Screen1;
 extern lv_obj_t *ui_Batterie_arc;
 extern lv_obj_t *ui_batterie_number;
@@ -24,26 +25,25 @@ extern lv_obj_t *ui_volt_;
 extern lv_obj_t *ui_temperature_indic;
 extern lv_obj_t *ui_temperature;
 extern lv_obj_t *ui_Panel1;
-extern lv_obj_t *ui_heure;
-extern lv_obj_t *ui_date;
 extern lv_obj_t *ui_Image3;
+extern lv_obj_t *ui_Panel2;
 // CUSTOM VARIABLES
 
 // SCREEN: ui_Screen2
 void ui_Screen2_screen_init(void);
+void ui_event_Screen2( lv_event_t * e);
 extern lv_obj_t *ui_Screen2;
-void ui_event_voltage_choice( lv_event_t * e);
 extern lv_obj_t *ui_voltage_choice;
-extern lv_obj_t *ui_charge_and_discharge_choice_;
-extern lv_obj_t *ui_Label7;
-extern lv_obj_t *ui_Label1;
-extern lv_obj_t *ui_Label2;
+extern lv_obj_t *ui_Roller1;
+extern lv_obj_t *ui_Panel3;
+extern lv_obj_t *ui_Panel4;
 // CUSTOM VARIABLES
 extern lv_obj_t *uic_Screen2;
 extern lv_obj_t *uic_Dropdown2;
 
 // SCREEN: ui_Screen3
 void ui_Screen3_screen_init(void);
+void ui_event_Screen3( lv_event_t * e);
 extern lv_obj_t *ui_Screen3;
 extern lv_obj_t *ui_batterie11;
 extern lv_obj_t *ui_batterie_12;
@@ -111,6 +111,8 @@ extern lv_obj_t *ui_tension_8;
 extern lv_obj_t *ui_tension_9;
 extern lv_obj_t *ui_tension_10;
 extern lv_obj_t *ui_tension_11;
+extern lv_obj_t *ui_Panel5;
+extern lv_obj_t *ui_Panel6;
 // CUSTOM VARIABLES
 
 // EVENTS

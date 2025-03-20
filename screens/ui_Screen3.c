@@ -8,7 +8,7 @@
 void ui_Screen3_screen_init(void)
 {
 ui_Screen3 = lv_obj_create(NULL);
-lv_obj_clear_flag( ui_Screen3, LV_OBJ_FLAG_SCROLLABLE );    /// Flags
+lv_obj_clear_flag( ui_Screen3, LV_OBJ_FLAG_SCROLLABLE | LV_OBJ_FLAG_SCROLL_ELASTIC );    /// Flags
 lv_obj_set_style_bg_color(ui_Screen3, lv_color_hex(0x000000), LV_PART_MAIN | LV_STATE_DEFAULT );
 lv_obj_set_style_bg_opa(ui_Screen3, 255, LV_PART_MAIN| LV_STATE_DEFAULT);
 lv_obj_set_style_border_color(ui_Screen3, lv_color_hex(0x0E1D1D), LV_PART_MAIN | LV_STATE_DEFAULT );
@@ -795,5 +795,30 @@ lv_obj_set_style_text_color(ui_tension_11, lv_color_hex(0x0393A0), LV_PART_MAIN 
 lv_obj_set_style_text_opa(ui_tension_11, 255, LV_PART_MAIN| LV_STATE_DEFAULT);
 lv_obj_set_style_text_font(ui_tension_11, &lv_font_montserrat_12, LV_PART_MAIN| LV_STATE_DEFAULT);
 
+ui_Panel5 = lv_obj_create(ui_Screen3);
+lv_obj_set_width( ui_Panel5, 23);
+lv_obj_set_height( ui_Panel5, 249);
+lv_obj_set_x( ui_Panel5, -139 );
+lv_obj_set_y( ui_Panel5, -1 );
+lv_obj_set_align( ui_Panel5, LV_ALIGN_CENTER );
+lv_obj_clear_flag( ui_Panel5, LV_OBJ_FLAG_SCROLLABLE );    /// Flags
+lv_obj_set_style_bg_color(ui_Panel5, lv_color_hex(0x001018), LV_PART_MAIN | LV_STATE_DEFAULT );
+lv_obj_set_style_bg_opa(ui_Panel5, 255, LV_PART_MAIN| LV_STATE_DEFAULT);
+lv_obj_set_style_border_color(ui_Panel5, lv_color_hex(0x000000), LV_PART_MAIN | LV_STATE_DEFAULT );
+lv_obj_set_style_border_opa(ui_Panel5, 255, LV_PART_MAIN| LV_STATE_DEFAULT);
+
+ui_Panel6 = lv_obj_create(ui_Screen3);
+lv_obj_set_width( ui_Panel6, 27);
+lv_obj_set_height( ui_Panel6, 249);
+lv_obj_set_x( ui_Panel6, 141 );
+lv_obj_set_y( ui_Panel6, -1 );
+lv_obj_set_align( ui_Panel6, LV_ALIGN_CENTER );
+lv_obj_clear_flag( ui_Panel6, LV_OBJ_FLAG_SCROLLABLE );    /// Flags
+lv_obj_set_style_bg_color(ui_Panel6, lv_color_hex(0x001018), LV_PART_MAIN | LV_STATE_DEFAULT );
+lv_obj_set_style_bg_opa(ui_Panel6, 255, LV_PART_MAIN| LV_STATE_DEFAULT);
+lv_obj_set_style_border_color(ui_Panel6, lv_color_hex(0x000000), LV_PART_MAIN | LV_STATE_DEFAULT );
+lv_obj_set_style_border_opa(ui_Panel6, 255, LV_PART_MAIN| LV_STATE_DEFAULT);
+
+lv_obj_add_event_cb(ui_Screen3, ui_event_Screen3, LV_EVENT_ALL, NULL);
 
 }
